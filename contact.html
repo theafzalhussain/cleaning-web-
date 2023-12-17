@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap"
+      rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header fixed-top ">
+        <div class="container d-flex align-items-center">
+    
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="/index.html" class="logo d-flex align-items-center">
+              <img width="100%" src="/assets/logo/logo.png" alt="">
+            </a>
+    
+          </div><!-- End Logo -->
+    
+          <nav class="header-nav ms-auto">
+            <ul>
+    
+              <li class="d-sm-block"><a href="register.html">Register as
+                  Professional</a></li>
+              <li><a href="contact.html">Help Center</a></li>
+              <li> <a href="login.html" class="btn btn-white" style="margin-top: -7px;"><svg
+                    class="svg-inline--fa fa-user fa-w-14 me-2" aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                    </path>
+                  </svg><!-- <i class="fas fa-user me-2"></i> Font Awesome fontawesome.com -->Login</a></li>
+              <li>
+              </li>
+            </ul>
+          </nav><!-- End Icons Navigation -->
+        </div>
+      </header>
+
+      <div id="contact" class="contact-area section-padding">
+        <div class="container">										
+         
+                <h1 style="margin-top: 120px;">Get in Touch</h1>
+                <p>Hey there! We're MP Cleaning Solutions, a local cleaning company based in R.K Puram, Delhi. Thanks for checking out our contact page. If you want to learn more about our home and office cleaning services, get in touch using the information below. We can't wait to hear from you!
+    </p>
+    <p>We clean homes and offices in these neighborhoods and zip codes: Delhi, Noida, Gurgaon, Kolkata So if you live or work in those areas, we've got you covered!
+    </p>
+                 <br>		
+            <div class="row">
+                <div class="col-lg-7">	
+                    <div class="contact">
+                    <form class="form" action="sendmail.php" method="POST" onsubmit="return ValidCaptcha()">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                                </div>
+                                    <div class="form-group col-md-12">
+                                     <select name="location" class="form-control" required="required" style="padding: 18px;">
+                              <option style="color:#000000;">Select City</option>
+                              <option value="Delhi">Delhi
+                              </option><option value="Gurugram">Gurugram</option>
+                              <option value="Noida">Noida</option>
+                              <option value="Kolkata">Kolkata</option>
+                              <option value="Faridabad">Faridabad</option>
+                              <option value="Ghaziabad">Ghaziabad</option>
+                              <option value="Mumbai">Mumbai</option>
+                              <option value="Howhra City">Howhra City</option>
+                              <option value="Hooghly City">Hooghly City</option>
+                              </select>
+                                </div>
+                                
+                                    <div class="form-group col-md-12" >
+                                    <input type="text" name="phone" class="form-control" pattern="[789][0-9]{9}" limit="10" minlength="10" maxlength="10" placeholder="10 Digit Mobile Number" required="required" >
+                                </div>
+                                <div class="form-group col-md-12">
+                                     <select name="services" class="form-control" required="required" style="padding: 18px;">
+                              <option>Select Services</option>
+                              <option value="Home Deep Cleaning Services">Home Deep Cleaning Services
+                              </option><option value="Bathroom Deep Cleaning Services">Bathroom Deep Cleaning Services</option>
+                              <option value="Floor Cleaning Services">Floor Cleaning Services</option>
+                              <option value="Kitchen Deep Cleaning Services">Kitchen Deep Cleaning Services</option>
+                              <option value="Sofa Shampooing">Sofa Shampooing</option>
+                              <option value="Office Chair Shampooing">Office Chair Shampooing</option>
+                              <option value="Office Deep Cleaning Services">Office Deep Cleaning Services</option>
+                              <option value="Office Carpet Cleaning and Shampooing">Office Carpet Cleaning and Shampooing</option>
+                              <option value="AC Services(only South Delhi)">AC Services(only South Delhi)</option>
+                              
+                              <option value="Hotel Cleaning Services">Hotel Cleaning Services</option>
+                              <option value="Glass Cleaning Services">Glass Cleaning Services</option>
+                              <option value="Pest Control Service">Pest Control Service </option>
+                              <option value="Commercials Cleaning">Commercials Cleaning </option>
+                              <option value="Corporate Office Deep Cleaning Service">Corporate Office Deep Cleaning Service</option>
+                      
+                              </select>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!--- END COL --> 
+                <div class="col-lg-5">
+                    <div class="single_address">
+                        <i class="fa fa-map-marker"></i>
+                        <h4>Our Address</h4>
+                        <p>B-114 Safdarjung Enclave, New Delhi, 110029</p>
+                    </div>
+                    <div class="single_address">
+                        <i class="fa fa-envelope"></i>
+                        <h4>Send your message</h4>
+                        <p>maapramilaenterprises@gmail.com</p>
+                    </div>
+                    <div class="single_address">
+                        <i class="fa fa-phone"></i>
+                        <h4>Call us on</h4>
+                        <p><a href="tel:9211607858">+91 9211607858</a> </p>
+                    </div>
+                                        
+                </div><!--- END COL --> 
+             <div class="contact_content">
+                <h5>Here are answers to some questions we get a lot:
+                 </h5>
+                 <p><b>What are your cleaning hours?</b><br>
+                 - We can schedule service Monday thru Sunday from 7am - 11pm. Weekend appointments may be available too. Just ask!
+    </p>
+     
+                 <p><b>How do I book a cleaning? 
+    </b><br>
+                 - Give us a call or email and we'll get you on the calendar. We try to be flexible to work around your schedule.
+    
+    </p>
+    
+                 <p><b>What payment types do you take? 
+    
+    </b><br>
+                - We accept all major credit cards, cash, Paytm,Gpay,PhonePay, UPI - whatever works best for you!
+    
+    
+    </p>
+    </div>
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->	
+    </div>
+
+
+
+
+    <section class="hrth py-0 pt-7 bg-1000">
+        <div>
+          <a href="https://wa.me/9211607858"><img class="whatsapp"
+              src="https://mpcleaningsolutions.in/assets/icons/whatsapp.png"></a>
+    
+          <!-- <a id="myBtnnn" class="bouncingball"><img class="whatsappp" src="https://mpcleaningsolutions.in/assets/img/en.png"></a>  -->
+        </div>
+    
+    
+    
+    
+        <div id="myModall" class="modall">
+          <!-- Modal content -->
+          <div class="modal-contentt">
+    
+            <form class="form" action="sendmail.php" method="POST" onsubmit="return ValidCaptcha()">
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                </div>
+                <div class="form-group col-md-12">
+                  <select name="location" class="form-control" required="required">
+                    <option style="color:#000000;">Select City</option>
+                    <option value="Delhi">Delhi
+                    </option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Howhra City">Howhra City</option>
+                    <option value="Hooghly City">Hooghly City</option>
+                  </select>
+                </div>
+    
+                <div class="form-group col-md-12">
+                  <input type="text" name="phone" class="form-control" pattern="[789][0-9]{9}" limit="10" minlength="10"
+                    maxlength="10" placeholder="10 Digit Mobile Number" required="required">
+                </div>
+                <div class="form-group col-md-12">
+                  <select name="services" class="form-control" required="required">
+                    <option>Select Services</option>
+                    <option value="Home Deep Cleaning Services">Home Deep Cleaning Services
+                    </option>
+                    <option value="Bathroom Deep Cleaning Services">Bathroom Deep Cleaning Services</option>
+                    <option value="Floor Cleaning Services">Floor Cleaning Services</option>
+                    <option value="Kitchen Deep Cleaning Services">Kitchen Deep Cleaning Services</option>
+                    <option value="Sofa Shampooing">Sofa Shampooing</option>
+                    <option value="Office Chair Shampooing">Office Chair Shampooing</option>
+                    <option value="Office Deep Cleaning Services">Office Deep Cleaning Services</option>
+                    <option value="Office Carpet Cleaning and Shampooing">Office Carpet Cleaning and Shampooing</option>
+                    <option value="AC Services(only South Delhi)">AC Services(only South Delhi)</option>
+    
+                    <option value="Hotel Cleaning Services">Hotel Cleaning Services</option>
+                    <option value="Glass Cleaning Services">Glass Cleaning Services</option>
+                    <option value="Pest Control Service">Pest Control Service </option>
+                    <option value="Commercials Cleaning">Commercials Cleaning </option>
+                    <option value="Corporate Office Deep Cleaning Service">Corporate Office Deep Cleaning Service</option>
+    
+                  </select>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg"
+                    title="Submit Your Message!">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModall");
+    
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtnnn");
+    
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+    
+          // When the user clicks the button, open the modal 
+          btn.onclick = function () {
+            modal.style.display = "block";
+          }
+    
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+    
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+    
+        <style>
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+    
+          /* The Modal (background) */
+          .modall {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+          }
+    
+          /* Modal Content */
+          .modal-contentt {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+          }
+    
+          /* The Close Button */
+          .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+    
+          .close:hover,
+          .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        </style>
+    
+        <div class="container">
+    
+    
+          <hr class="text-900">
+          <div class="row">
+    
+    
+            <div class="footer-menu col-12 col-md-12 col-lg-12 col-xxl-12 mb-12">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="footer_logo">
+                    <a href="#"><img src="/assets/logo/logo.png" width="100%"></a>
+                    <p>MP Cleaning Solutions Services is a leading Home and Office Services Platform of India.</p>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <h3>Quick Links</h3>
+                  <ul class="qwd">
+                    <li><a href="https://mpcleaningsolutions.in/">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="https://mpcleaningsolutions.in/faq">Faq</a></li>
+                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                    <li><a href="terms-conditions">Terms &amp; Conditions</a></li>
+                    <li><a href="refund-and-cancelation">Refund &amp; Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h3>Contact Info</h3>
+                  <ul class="qwd">
+                    <li><a href="https://mpcleaningsolutions.in/"> B 114 krishna Safdarjung Enclavenclave, New Delhi, Delhi
+                        110029</a></li>
+                    <li><a href="https://mpcleaningsolutions.in/">+91-9211607858 </a></li>
+                    <li><a href="https://mpcleaningsolutions.in/">info@mpcleaningsolutions.in</a></li>
+    
+    
+    
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h3>Working Hours</h3>
+                  <ul class="qwd">
+                    <li><a href="#">Timing 8:00 AM - 9:00 PM</a></li>
+                    <li><a href="#">Monday To Sunday</a></li>
+                    <br>
+                    <li><a href="https://mpcleaningsolutions.in/"><img
+                          src="https://mpcleaningsolutions.in/assets/img/google-play.webp"></a></li>
+                    <br>
+                    <li><a href="https://mpcleaningsolutions.in/"><img
+                          src="https://mpcleaningsolutions.in/assets/img/app.webp"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div>
+          <hr class="border border-800">
+          <div class="row flex-center pb-3">
+            <div class="col-md-6 order-0">
+              <p class="text-200 text-center text-md-start">All rights Reserved © MPcleaning services, 2022</p>
+            </div>
+            <div class="col-md-6 order-1">
+              <p class="text-200 text-center text-md-end"> Designed By <a class="text-gradient text-900"
+                  href="https://webindiaprocess.com">Web India Process</a>
+              </p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section>
+    
+    
+    
+    
+      
+      <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+         <div class="container0">
+    <div class="row">
+    <div class="col-12">
+    <div class="heading_tt">Select Your City
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-12 col-sm-12 col-12">
+    <div class="st_dls_bx">
+    <ul>
+        <li><a href="allservices.html?location=delhi"><p>Delhi</p></a></li>
+    <li><a href="allservices.html?location=mumbai"><p>Mumbai</p></a></li>
+    <li><a href="allservices.html?location=bengaluru"><p>Bengaluru</p></a></li>
+    <li><a href="allservices.html?location=kolkata"><p>Kolkata</p></a></li>
+    <li><a href="allservices.html?location=hyderabad"><p>Hyderabad</p></a></li>
+    <li><a href="allservices.html?location=gurugram"><p>Gurugram</p></a></li>
+    <li><a href="allservices.html?location=noida"><p>Noida</p></a></li>
+    <li><a href="allservices.html?location=ghaziabad"><p>Ghaziabad</p></a></li>
+    <li><a href="allservices.html?location=faridabad"><p>Faridabad</p></a></li>
+    <li><a href="allservices.html?location=jaipur"><p>Jaipur</p></a></li>
+    <li><a href="allservices.html?location=pune"><p>Pune</p></a></li>
+    <li><a href="allservices.html?location=dehradun"><p>Dehradun</p></a></li>
+    <li><a href="allservices.html?location=chandigarh"><p>Chandigarh</p></a></li>
+    <li><a href="allservices.html?location=shimla"><p>Shimla</p></a></li>
+    <li><a href="allservices.html?location=surat"><p>Surat</p></a></li>
+    <li><a href="allservices.html?location=mysuru"><p>Mysuru</p></a></li>
+    <li><a href="allservices.html?location=chennai"><p>Chennai</p></a></li>
+    <li><a href="allservices.html?location=ahmedabad"><p>Ahmedabad</p></a></li>
+    <li><a href="allservices.html?location=mumbai"><p>Mumbai</p></a></li>
+    <li><a href="allservices.html?location=lucknow"><p>Lucknow</p></a></li>
+    <li><a href="allservices.html?location=bhopal"><p>Bhopal</p></a></li>
+    <li><a href="allservices.html?location=howrah-city"><p>Howrah City</p></a></li>
+    <li><a href="allservices.html?location=digha-west-bengal"><p>Digha West Bengal</p></a></li>
+    <li><a href="allservices.html?location=hooghly"><p>Hooghly</p></a></li>
+    
+    
+    
+    
+    
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+        </div>
+    </div>
+     
+</body>
+</html>
